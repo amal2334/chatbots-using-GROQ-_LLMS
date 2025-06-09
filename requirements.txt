@@ -4,3 +4,6 @@ huggingface_hub
 pyhton-dotenv
 transformers
 requests
+chromadb
+groq
+tiktoken
