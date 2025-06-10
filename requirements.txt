@@ -15,5 +15,5 @@ python-dotenv
 langchain-text-splitters
 bs4
 langchain-text-splitters
-
+sentence-transformers
 
