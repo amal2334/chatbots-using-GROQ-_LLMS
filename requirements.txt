@@ -12,8 +12,8 @@ langchain-core
 langchain-community
 langchain-groq
 python-dotenv
-
-
 langchain-text-splitters
 bs4
+langchain-text-splitters
+
 
