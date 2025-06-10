@@ -1,6 +1,6 @@
 
 huggingface_hub
-pyhton-dotenv
+python-dotenv
 transformers
 requests
 chromadb
