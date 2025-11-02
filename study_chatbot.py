@@ -22,7 +22,7 @@ load_dotenv()
 # Environment setup
 os.environ['HF_TOKEN'] = os.getenv("HF_TOKEN_KEY")
 embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
-llm = ChatGroq(model="Gemma2-9b-It", groq_api_key=os.getenv("groq_api_KEY"))
+llm = ChatGroq(model="llama-3.1-8b-instant", groq_api_key=os.getenv("groq_api_KEY"))
 # Session memory
 store = {}
 def get_session_history(session_id: str) -> BaseChatMessageHistory:
@@ -100,3 +100,4 @@ if st.session_state.chat_chain:
         )
         st.session_state.chat_history.append(AIMessage(content=response["answer"]))
         st.rerun()
+
