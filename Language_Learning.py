@@ -16,7 +16,7 @@ load_dotenv()
 # 1. Groq Model Setup
 # -----------------------------
 groq_api_key = os.getenv("groq_api_KEY")
-model = ChatGroq(model="Gemma2-9b-It", groq_api_key=groq_api_key)
+model = ChatGroq(model="llama-3.1-8b-instant", groq_api_key=groq_api_key)
 
 # -----------------------------
 # 2. Prompt for Language Tutor
@@ -79,3 +79,4 @@ if user_input:
 
     st.session_state.chat_history.append(response)
     st.rerun()
+
