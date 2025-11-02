@@ -11,7 +11,7 @@ import os
 # 1. Setup Groq Model
 # -----------------------------
 groq_api_key = os.getenv("groq_api_KEY")
-model = ChatGroq(model="Gemma2-9b-It", groq_api_key=groq_api_key)
+model = ChatGroq(model="llama-3.1-8b-instant", groq_api_key=groq_api_key)
 
 # -----------------------------
 # 2. Manual Message Trimmer
@@ -63,3 +63,4 @@ if user_input:
 
     st.session_state.chat_history.append(response)
     st.rerun()
+
