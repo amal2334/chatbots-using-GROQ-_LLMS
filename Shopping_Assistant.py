@@ -14,7 +14,7 @@ load_dotenv()
 # Model Setup (Using Groq)
 # -----------------------------
 groq_api_key = os.getenv("groq_api_KEY") 
-model = ChatGroq(model="Gemma2-9b-It", groq_api_key=groq_api_key)
+model = ChatGroq(model="llama-3.1-8b-instant", groq_api_key=groq_api_key)
 
 # -----------------------------
 # Session Store Setup
@@ -73,3 +73,4 @@ if user_input:
     # Append response to history and rerun
     st.session_state.chat_history.append(response)
     st.rerun()
+
