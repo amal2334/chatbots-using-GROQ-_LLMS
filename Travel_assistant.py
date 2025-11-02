@@ -12,7 +12,7 @@ import os
 groq_api_key = os.getenv("groq_api_KEY")
 
 # Initialize the model
-model = ChatGroq(model="Gemma2-9b-It", groq_api_key=groq_api_key)
+model = ChatGroq(model="llama-3.1-8b-instant", groq_api_key=groq_api_key)
 
 # Streamlit app setup
 st.set_page_config(page_title="Travel Assistant 🌍", page_icon="✈️")
@@ -46,6 +46,7 @@ if user_input:
 
     # Rerun the app to show the updated conversation
     st.rerun()
+
 
 
 
